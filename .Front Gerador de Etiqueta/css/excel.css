@@ -1,0 +1,46 @@
+li{
+    list-style-type: none;
+}
+
+.box{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 4%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.necessario h2{
+    margin-bottom: 20px;
+}
+
+.necessario li{
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#compare label{
+    display: block;
+    margin: 20px 0;
+    border: 2px dashed white;
+    cursor: pointer;
+    padding: 50px 0;
+    transition: all 0.3s ease;
+}
+
+#compare label:hover{
+    border: 2px dashed green;
+    color: green;
+}
+
+#compare input[type="file"]{
+    display: none;
+}

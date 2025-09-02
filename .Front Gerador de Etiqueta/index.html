@@ -1,0 +1,110 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automação de Etiqueta</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="./imagens/icone.png">
+        <script src="https://kit.fontawesome.com/94c1b75b0e.js" crossorigin="anonymous"></script>
+        <script src="js/xlsx.full.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>IMPRIMIR ETIQUETAS</h1>
+        </header>
+        <section class="subheader"></section>
+        <main>
+
+            <div class="message d-none"><div class="box-message"><p>Impressão Concluida!!!</p> <button>Ok!</button> </div></div>
+            
+            <div class="lista-impressora d-none">
+                <div class="close">
+                    <h3><i class="fa fa-close"></i> Fechar</h3>
+                </div><!--close-->
+                <div class="lista">
+                    <h2>Lista de Impressão</h2>
+
+                    <div class="jobs">
+                        <ul id="jobList">
+                            
+                        </ul>
+                    </div><!--jobs-->
+
+                </div><!--lista-->
+                
+            </div><!--lista-impressora-->
+
+            <div class="printer">
+                <label for="printer">Impressora:</label>
+                <select name="printer" id="printer">
+                    <option value="">Nenhuma Impressora Encontrada!</option>
+                </select>
+            </div><!--printer-->
+
+            <section class="file">
+
+                <div class="info">
+                    <h2>Colunas Necessárias</h2>
+                    <ul>
+                        <li>Nome</li>
+                        <li>Valor</li>
+                        <li>Quantidade</li>
+                    </ul>
+                    <br>
+                    <h2>Colunas Opcionais</h2>
+                    <ul>
+                        <li>Abreviação</li>
+                    </ul>
+                </div><!--info-->
+
+                <form method="post" enctype="multipart/form-data" id="formEtiqueta">
+                    <h2>Imprimir do Excel</h2>
+                    <br>
+                    <label for="file" id="lFile">Selecione um Arquivo Excel</label>
+                    <div class="display"></div>
+                    <label for="col" id="lCol">Selecione o tipo de etiqueta:</label>
+                    <select name="col" id="col" style="font-weight: bold;">
+                        <option value="3">3 Colunas</option>
+                        <option value="2">2 Colunas</option>
+                    </select>
+                    <label for="sheet" id="lSheet">Selecione a Planilha:</label>
+                    <select name="sheet" id="sheet" required></select>
+                    <input type="file" id="file" name="excel" accept=".xlsx" required>
+                    <button id="processButton" class="print"><i class="fa fa-print"></i> Imprimir Etiquetas</button>
+                </form>
+            </section><!--file-->
+
+            <section class="print-one">
+                <h2>Imprimir Etiquetas de 1 Produto</h2>
+                <form method="post" id="printOne">
+
+                    <label for="name">Digite o nome do produto:</label>
+                    <input type="text" name="name" placeholder="Nome do produto" id="nameP" required>
+
+                    <label for="price">Digite o preço do produto:</label>
+                    <input type="text" name="price" id="price" placeholder="Preço" required>
+
+                    <label for="price">Digite a quantidade para imprimir:</label>
+                    <input type="text" name="qtd" id="qtd" placeholder="Quantidade" required>
+
+                    <label for="colOne">Selecione o tipo de etiqueta:</label>
+                    <select name="col" id="colOne">
+                        <option value="3">3 Colunas</option>
+                        <option value="2">2 Colunas</option>
+                    </select>
+
+                    <button id="btnOne" class="print"><i class="fa fa-print"></i> Imprimir Etiqueta</button>
+                </form>
+            </section><!--print-one-->
+        </main>
+        <footer>
+
+        </footer>
+        <script type="module" src="js/api/etiqueta.js"></script>
+        <script src="js/api/umaEtiqueta.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/api/getPrinter.js"></script>
+        <script type="module" src="js/api/getJob.js"></script>
+        <script src="js/components.js"></script>
+    </body>
+</html>

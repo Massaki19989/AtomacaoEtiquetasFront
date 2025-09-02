@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.subheader{
+    background-color: rgb(170, 170, 170);
+    text-align: center;
+    padding: 4px 0;
+}
+
+.subheader li{
+    display: inline-block;
+}
+
+.subheader a{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.subheader a:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(255, 79, 79);
+}
+
+.d-none{
+    display: none;
+}
+
+.lista-impressora{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 3px 24px 1px #000000; 
+    box-shadow: 1px 3px 24px 1px #000000;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lista-impressora .close{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.lista-impressora .lista{
+    background-color: white;
+    padding: 30px;
+    width: 100vw;
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 1px 3px 24px 1px #000000; 
+    box-shadow: 1px 3px 24px 1px #000000;
+    text-align: center;
+}
+
+.jobs #jobList{
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.jobs #jobList li{
+    list-style-type: none;
+    margin-top: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+}
+
+.message{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.message .box-message{
+    background-color: rgb(6, 7, 73);
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.message .box-message p{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.printer{
+    background-color: white;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 3px 24px 1px #000000; 
+    box-shadow: 1px 3px 24px 1px #000000;
+    z-index: 999;
+}
+
+.printer label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.printer select{
+    padding: 10px 0;
+    outline: none;
+    cursor: pointer;
+}
+
+header{
+    text-align: center;
+    padding: 20px 10px;
+    background-color: black;
+}
+
+header h1{
+    color: white;
+    font-size: 24px;
+}
+
+main{
+    padding: 50px;
+    background-color: #333;
+    min-height: 90vh;
+}
+
+main .info{
+    width: 350px;
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+main .info h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+main .info li{
+    list-style-type: none;
+    background-color: white;
+    color: #333;
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main .file{
+    color: white;
+}
+
+main .file form{
+    margin-top: 20px;
+    text-align: center;
+    background-color: black;
+    width: 600px;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+main .file #lFile{
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: rgb(10, 73, 13);
+    border-bottom: 5px solid rgb(5, 36, 6);
+    border-right: 5px solid rgb(5, 36, 6);
+}
+
+main .file #lFile:hover{
+    background-color: rgb(17, 59, 19);
+}
+
+main .file select{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main #sheet{
+    margin-top: 10px;
+}
+
+main #lSheet{
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+}
+
+main #lCol{
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+}
+
+main #file{
+    display: none;
+    visibility: hidden;
+}
+
+main .display{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(180, 172, 52);
+    border-radius: 5px;
+    padding: 15px 20px;
+    display: none;
+}
+
+main button{
+    margin: 0 auto;
+    background-color: rgb(34, 34, 121);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+    display: block;
+}
+
+main button:hover{
+    background-color: rgb(24, 24, 87);
+}
+
+
+.print-one{
+    width: 600px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+    padding: 40px 20px;
+    max-width: 100%;
+}
+
+.print-one h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.print-one label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.print-one input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0 10px;
+}
+
+.print-one select{
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+}
+
+
+footer{
+    background-color: black;
+    padding: 40px 0;
+}

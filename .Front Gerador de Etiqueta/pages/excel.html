@@ -1,0 +1,46 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/excel.css">
+    </head>
+    <body>
+        <header>
+            <h1>Teste</h1>
+        </header>
+        <section class="subheader"></section>
+
+        <main>
+            <div class="necessario box">
+                <h2>Colunas Necessárias</h2>
+                <ul>
+                    <li>Nome</li>
+                    <li>Código</li>
+                    <li>Valor</li>
+                </ul>
+            </div><!--necessario-->
+
+            <form method="post" enctype="multipart/form-data" id="compare" class="box">
+                <h2>Comparar Tabelas</h2>
+                
+                <div class="dropzone" id="dropzone1">
+                    <label for="excel1" draggable="true" id="lblExcel1">Selecione o Excel Completo</label>
+                    <input type="file" name="excel1" id="excel1">
+                </div><!--dropzone-->
+
+                <div class="dropzone" id="dropzone2">
+                    <label for="excel2" draggable="true" id="lblExcel2">Selecione o Arquivo de Comparação</label>
+                    <input type="file" name="excel2" id="excel2">
+                </div><!--dropzone-->
+
+                <button type="submit">Comparar Tabelas</button>
+            </form>
+        </main>
+
+        <script src="../js/components.js"></script>
+        <script src="../js/functions-excel.js"></script>
+        <script src="../js/api/tabelas.js"></script>
+    </body>
+</html>

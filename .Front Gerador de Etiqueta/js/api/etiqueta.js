@@ -34,9 +34,11 @@ formEtiqueta.addEventListener('submit', (e)=>{
 
         if(col == "2"){
             let url = "http://127.0.0.1:5000/big"
+            alert('iMPRIMINDO!!!')
             imprimir(url);
         }else if(col == "3"){
             let url = "http://127.0.0.1:5000"
+            alert('iMPRIMINDO!!!')
             imprimir(url);
         }
 

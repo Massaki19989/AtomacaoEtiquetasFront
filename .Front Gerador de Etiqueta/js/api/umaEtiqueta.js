@@ -1,12 +1,15 @@
 const button2 = document.getElementById('btnOne');
 const formEtiqueta2 = document.getElementById('printOne')
 
+
 async function imprimir2(url){
+    const printer = document.getElementById('printer').value
     const formData = {
         name: document.getElementById("nameP").value,
         price: document.getElementById("price").value,
         qtd: document.getElementById("qtd").value,
-        col: document.getElementById("colOne").value
+        col: document.getElementById("colOne").value,
+        printer: printer
     }
     try{
         const response = await fetch(url, {

@@ -70,6 +70,10 @@
                     <label for="sheet" id="lSheet">Selecione a Planilha:</label>
                     <select name="sheet" id="sheet" required></select>
                     <input type="file" id="file" name="excel" accept=".xlsx" required>
+                    <div class="noCode">
+                        <input type="checkbox" name="code" id="noCode" style="cursor: pointer;" value="true">
+                        <label for="noCode" style="cursor: pointer; user-select: none;">Sem código</label>
+                    </div><!--noCode-->
                     <button id="processButton" class="print"><i class="fa fa-print"></i> Imprimir Etiquetas</button>
                 </form>
             </section><!--file-->
@@ -84,7 +88,7 @@
                     <label for="price">Digite o preço do produto:</label>
                     <input type="text" name="price" id="price" placeholder="Preço" required>
 
-                    <label for="price">Digite a quantidade para imprimir:</label>
+                    <label for="qtd">Digite a quantidade para imprimir:</label>
                     <input type="text" name="qtd" id="qtd" placeholder="Quantidade" required>
 
                     <label for="colOne">Selecione o tipo de etiqueta:</label>
@@ -92,6 +96,11 @@
                         <option value="3">3 Colunas</option>
                         <option value="2">2 Colunas</option>
                     </select>
+
+                    <div class="noCode">
+                        <input type="checkbox" name="code" id="noCode2" style="cursor: pointer;" value="true">
+                        <label for="noCode2" style="cursor: pointer; user-select: none;">Sem código</label>
+                    </div><!--noCode-->
 
                     <button id="btnOne" class="print"><i class="fa fa-print"></i> Imprimir Etiqueta</button>
                 </form>

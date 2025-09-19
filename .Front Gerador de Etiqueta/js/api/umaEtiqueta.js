@@ -2,6 +2,7 @@ const button2 = document.getElementById('btnOne');
 const formEtiqueta2 = document.getElementById('printOne')
 
 
+
 async function imprimir2(url){
     const printer = document.getElementById('printer').value
     const formData = {
@@ -11,6 +12,17 @@ async function imprimir2(url){
         col: document.getElementById("colOne").value,
         printer: printer
     }
+
+    try{
+        if(document.getElementById('noCode2').value){
+            formData.code = document.getElementById('noCode2').value
+        }
+    }catch(err){
+        console.log(err.message)
+    }
+    
+
+
     try{
         const response = await fetch(url, {
             method: 'POST',

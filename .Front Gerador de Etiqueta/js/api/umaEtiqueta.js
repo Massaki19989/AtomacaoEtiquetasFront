@@ -42,8 +42,7 @@ async function imprimir2(url){
 formEtiqueta2.addEventListener('submit', (e)=>{
     e.preventDefault()
     try{
-        let url = "http://127.0.0.1:5000/one"
-        imprimir2(url);
+        imprimir2("http://127.0.0.1:5000/one");
     }catch(e){
         alert("Ocorreu um erro")
         console.log(e.message)

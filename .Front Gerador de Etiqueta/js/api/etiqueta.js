@@ -19,8 +19,6 @@ async function imprimir(url){
         listPrint.classList.add('d-none')
         document.querySelector('.message').classList.remove('d-none')
 
-        document.location.reload();
-
     }catch(error){
         clearInterval(intervalJob);
         console.error('Error:', error);

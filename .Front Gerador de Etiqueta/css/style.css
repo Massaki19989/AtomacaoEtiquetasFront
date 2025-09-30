@@ -358,3 +358,8 @@ footer{
     border: 1px solid white;
     font-size: 30px;
 }
+
+.bg-yellow{
+    background-color: rgb(163, 163, 38) !important;
+    color: black !important;
+}

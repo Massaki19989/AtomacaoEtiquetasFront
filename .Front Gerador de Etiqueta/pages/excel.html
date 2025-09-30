@@ -13,7 +13,7 @@
         <section class="subheader"></section>
 
         <main>
-            <div class="necessario box">
+            <div class="necessario box bg-yellow">
                 <h2>Colunas Necessárias</h2>
                 <ul>
                     <li>Nome</li>
@@ -36,6 +36,39 @@
                 </div><!--dropzone-->
 
                 <button type="submit">Comparar Tabelas</button>
+            </form>
+
+            <div class="necessario box bg-yellow">
+                <h2>Colunas Necessárias para juntar Tabelas</h2>
+                <h3>Excel 1 (Pedido)</h3>
+                <ul>
+                    <li>Nome</li>
+                    <li>Código</li>
+                    <li>Quantidade</li>
+                </ul>
+
+                <h3>Excel 2 (Venda)</h3>
+                <ul>
+                    <li>Nome</li>
+                    <li>Código</li>
+                    <li>Valor</li>
+                </ul>
+            </div><!--necessario-->
+
+            <form method="post" enctype="multipart/form-data" id="together" class="box">
+                <h2>Juntar Tabelas</h2>
+                <div class="dropzone" id="dropzone3">
+                    <label for="pedido" draggable="true" id="lblPedido">Selecione o Pedido</label>
+                    <input type="file" name="pedido" id="pedido" class="d-none">
+                </div><!--dropzone-->
+                
+                <div class="dropzone" id="dropzone4">
+                    <label for="venda" draggable="true" id="lblVenda">Selecione a Venda</label>
+                    <input type="file" name="venda" id="venda" class="d-none">
+                </div><!--dropzone-->
+
+                <button type="submit">Juntar Tabelas</button>
+                
             </form>
         </main>
 

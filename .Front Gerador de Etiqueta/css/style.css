@@ -5,6 +5,42 @@
     font-family: Arial, sans-serif;
 }
 
+.config{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-box-shadow: 1px 3px 24px 1px #000000; 
+    box-shadow: 1px 3px 24px 1px #000000;
+    font-size: 24px;
+}
+
+.config-options{
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+    -webkit-box-shadow: 1px 3px 24px 1px #000000; 
+    box-shadow: 1px 3px 24px 1px #000000;
+}
+
+.config-options .close{
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.config:hover{
+    background-color: rgb(36, 36, 36);
+}
 
 .subheader{
     background-color: rgb(170, 170, 170);
@@ -360,6 +396,6 @@ footer{
 }
 
 .bg-yellow{
-    background-color: rgb(163, 163, 38) !important;
+    background-color: rgb(168, 168, 0) !important;
     color: black !important;
 }

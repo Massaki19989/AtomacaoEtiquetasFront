@@ -13,6 +13,33 @@
             <h1>IMPRIMIR ETIQUETAS</h1>
         </header>
         <section class="subheader"></section>
+        <div class="config">
+            <i class="fa fa-gear"></i>
+        </div><!--config-->
+
+        <div class="config-options">
+            <div class="close">
+                <h3><i class="fa fa-close"></i> Fechar</h3>
+            </div><!--close-->
+            
+            <form method="post">
+                <div class="option">
+                    <label for="3cols">Selecione a impressora de 3 colunas:</label>
+                    <select name="3cols" id="3cols"></select>
+                </div><!--option-->
+
+                <div class="option">
+                    <label for="2cols">Selecione a impressora de 2 colunas:</label>
+                    <select name="2cols" id="2cols"></select>
+                </div><!--option-->
+
+                <button type="submit">Salvar</button>
+            </form>
+
+            </div><!--options-->
+        </div><!--config-options-->
+
+
         <main>
             <div class="imprimir d-none"><h2>Imprimindo...</h2></div>
             <div class="message d-none"><div class="box-message"><p>Impressão Concluida!!!</p> <button>Ok!</button> </div></div>
@@ -73,7 +100,13 @@
                     <div class="noCode">
                         <input type="checkbox" name="code" id="noCode" style="cursor: pointer;" value="true">
                         <label for="noCode" style="cursor: pointer; user-select: none;">Sem código</label>
+
+                        <br><br>
+
+                        <input type="checkbox" name="double" id="double" style="cursor: pointer;">
+                        <label for="double" style="cursor: pointer; user-select: none;">Dobrar a Quantidade</label>
                     </div><!--noCode-->
+                    
                     <button id="processButton" class="print"><i class="fa fa-print"></i> Imprimir Etiquetas</button>
                 </form>
             </section><!--file-->

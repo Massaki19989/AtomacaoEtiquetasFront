@@ -17,20 +17,24 @@
             <i class="fa fa-gear"></i>
         </div><!--config-->
 
-        <div class="config-options">
+        <div class="config-options d-none">
             <div class="close">
                 <h3><i class="fa fa-close"></i> Fechar</h3>
             </div><!--close-->
             
-            <form method="post">
+            <form method="post" id="configForm">
                 <div class="option">
                     <label for="3cols">Selecione a impressora de 3 colunas:</label>
-                    <select name="3cols" id="3cols"></select>
+                    <select name="3cols" id="3cols">
+                        <option value="">Nenhuma Impressora Encontrada!</option>
+                    </select>
                 </div><!--option-->
 
                 <div class="option">
                     <label for="2cols">Selecione a impressora de 2 colunas:</label>
-                    <select name="2cols" id="2cols"></select>
+                    <select name="2cols" id="2cols">
+                        <option value="">Nenhuma Impressora Encontrada!</option>
+                    </select>
                 </div><!--option-->
 
                 <button type="submit">Salvar</button>

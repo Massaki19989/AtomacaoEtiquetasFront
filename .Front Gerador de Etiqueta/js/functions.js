@@ -46,3 +46,16 @@ document.querySelector(".message button").addEventListener('click', ()=>{
 document.querySelector('.lista-impressora .close').addEventListener('click', ()=>{
     document.querySelector('.lista-impressora').classList.add('d-none')
 })
+
+document.querySelector('.config').addEventListener('click', ()=>{
+    if(document.querySelector('.config-options').classList.contains('d-none')){
+        document.querySelector('.config-options').classList.remove('d-none')
+    }else{
+        document.querySelector('.config-options').classList.add('d-none')
+    }
+    
+})
+
+document.querySelector('.config-options .close').addEventListener('click', ()=>{
+    document.querySelector('.config-options').classList.add('d-none')
+})

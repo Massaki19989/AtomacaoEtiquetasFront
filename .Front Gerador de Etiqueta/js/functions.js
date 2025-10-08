@@ -1,3 +1,4 @@
+
 const file = document.getElementById('file');
 const label = document.querySelector('label[for="file"]');
 

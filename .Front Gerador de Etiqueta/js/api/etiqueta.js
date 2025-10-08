@@ -2,10 +2,21 @@ import getJob from "./getJob.js";
 
 const formEtiqueta = document.getElementById('formEtiqueta')
 const listPrint = document.querySelector('.lista-impressora')
-
+async function getPrinterSaved(){
+    const response = await fetch("http://127.0.0.1:5000/config");
+    const result = await response.json();
+    return result
+}
 async function imprimir(url){
     const formData = new FormData(formEtiqueta);
-    let printer = document.getElementById('printer').value
+    const getPrinter = await getPrinterSaved()
+    let printer = getPrinter.col3
+    let col = document.querySelector('#col').value
+    if(col == '3' || col == 3){
+        printer = getPrinter.col3
+    }else if(col == '2' || col == 2){
+        printer = getPrinter.col2
+    }
     formData.append('printer', printer)
     listPrint.classList.remove('d-none')
     let intervalJob = setInterval(getJob, 2000);

@@ -13,6 +13,35 @@
         <section class="subheader"></section>
 
         <main>
+
+            <div class="comparar-velling">
+                <div class="necessario box bg-yellow">
+                    <h2>Colunas Necessárias Para Comparar Tabelas - Velling</h2>
+                    <ul>
+                        <li>Produtor</li>
+                        <li>Nome</li>
+                        <li>Tipo</li>
+                        <li>Valor</li>
+                    </ul>
+                </div><!--necessario-->
+
+                <form method="post" enctype="multipart/form-data" id="compareVelling" class="box">
+                    <h2>Comparar Tabelas Velling</h2>
+                    
+                    <div class="dropzone" id="dropzone5">
+                        <label for="excel5" draggable="true" id="lblExcel5">Selecione a Primeira Tabela</label>
+                        <input type="file" name="excel1" id="excel5" class="d-none">
+                    </div><!--dropzone-->
+
+                    <div class="dropzone" id="dropzone6">
+                        <label for="excel6" draggable="true" id="lblExcel6">Selecione a Segunda Tabela</label>
+                        <input type="file" name="excel2" id="excel6" class="d-none">
+                    </div><!--dropzone-->
+
+                    <button type="submit">Comparar Tabelas</button>
+                </form>
+            </div><!--comparar-velling-->
+
             <div class="necessario box bg-yellow">
                 <h2>Colunas Necessárias</h2>
                 <ul>

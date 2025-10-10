@@ -43,6 +43,8 @@ try{
     setupDropZone('dropzone2', 'excel2','lblExcel2');
     setupDropZone('dropzone3', 'pedido', 'lblPedido');
     setupDropZone('dropzone4', 'venda','lblVenda');
+    setupDropZone('dropzone5', 'excel5', 'lblExcel5');
+    setupDropZone('dropzone6', 'excel6','lblExcel6');
 }catch(e){
     console.log(e);
 }
